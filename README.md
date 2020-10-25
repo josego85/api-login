@@ -8,5 +8,5 @@ It is an example of a login API in NodeJS.
 ```
 
 # Endpoints
-  GET: /api/v1  Welcome
-  POST: /api/v1/login   Login
+* GET: /api/v1  Welcome
+* POST: /api/v1/login   Login
