@@ -11,6 +11,6 @@ app.use('/api/v1', rest);
 // Listening port.
 app.listen(PORT, () =>
 {
-    console.log(`The server running at` + 
+    console.log(`The server running at: ` + 
       ` http://${HOSTNAME}:${PORT}/api/v1`);
 });
