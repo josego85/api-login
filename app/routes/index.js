@@ -2,21 +2,13 @@
 
 const express = require('express');
 const router = express.Router();
+const mainRouter = require('./main');
+const loginRouter = require('./login');
 
 // All the routes.
-router.get('/',function(req, res){
-    res.status(200).send(`Welcome to API LOGIN`);
-});
+router.use(mainRouter);
 
 // Login user.
-router.post('/api/login', function(req, res){
-    res.status(200).json(
-    {
-        result: true,
-        token: "iuyofiuyrewiouyrioewuyrei*&^*^**", 
-        userMainId: 1,
-        hrMainId: 1,
-    });
-});
+router.use(loginRouter);
 
 module.exports = router;
